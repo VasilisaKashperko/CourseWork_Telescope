@@ -1,0 +1,99 @@
+.dialog{
+	position:fixed;
+	top:50%;
+	left:100%;
+	width:400px;
+	height:400px;
+	margin-left:-25px;
+	margin-top:-215px;
+	padding-left:15px;
+	border:#7c72ca 4px inset;
+	border-radius:10px;
+	background:#cbb1ff; 
+	color:#31163f;  
+	z-index:1500;
+	font-size:15pt;
+	font-family: monospace;
+	font-style: italic;
+	font-size: xx-large;
+}
+
+.dialog .label{
+	position: absolute;
+	transform: rotate(270deg);
+	width:420px;
+	height:35px;
+	text-align:center;
+	overflow:hidden;
+	display:inline-block;
+	margin-left:-50%;
+	margin-top:45%;
+	cursor:pointer;
+}
+
+.dialog .header{
+	display:none;
+	text-align:center;
+	margin-top:-200px;
+}
+
+.dialog .history{
+	height: 380px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	overflow-y:scroll;
+	background:rgb(234, 221, 246);
+}
+
+.dialog input{
+	margin:10px 25px;
+	width:79%;
+	border:2px #c184e7 solid;
+	border-radius: 7px;
+	font-size:18px;
+}
+
+.dialog button
+{
+	margin:10px 25px;
+	width:81%;
+	border:2px #c184e7 solid;
+	border-radius: 7px;
+	font-size:18px;
+}
+
+.dialog .history
+{
+	margin:10px 25px;
+	width:80%;
+	border:2px #c184e7 solid;
+	border-radius: 7px;
+	font-size:18px;
+}
+
+.dialog button, .dialog .input{
+	height: 30px;
+}
+
+.dialog .history .question, .dialog .history .answer{
+	margin:5px;
+	width:78%;
+	border-radius: 5px;
+	padding:5px;
+	
+}
+
+.dialog .history .question{
+	margin-left:40px;
+	background: #efbaf9;
+}
+.dialog .history .answer{
+	margin-right:40px;
+	background:#dc78d8;
+}
+
+.dialog .history .answer img,.dialog .history .answer embed{
+	cursor: pointer;
+	display: block;
+	max-width: 180px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симулятор "Телескоп"</title>
+    <link type = "text/css" rel = "stylesheet" href = "Installation simulator.css">
+    <link rel="stylesheet" href="w3.css">
+    <script src="jquery.js"></script>
+    <script src="knowlege.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      .mySlides {display:none;}
+    </style>
+</head>
+<font size="2%">
+<header class="header">
+    <a href="Main.html" class="logo">Симулятор установки "Телескоп"</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="Theoretical knowledge.html">Теоретические сведения</a></li>
+      <li><a href="Installation structure.html">Структура установки</a></li>
+      <li><a href="Installation simulator.html">Симулятор установки</a></li>
+      <li><a href="About.html">Об авторе</a></li>
+    </ul>
+</header>
+</font>
+<body>
+  <br><br><br><br><br><br>
+  <div class="w3-content w3-display-container">
+
+    <img class="mySlides" src="images/screenshots/1.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/2.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/3.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/4.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/5.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/6.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/7.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/8.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/9.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/10.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/11.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/12.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/13.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/14.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/15.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/16.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/17.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/18.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/19.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/20.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/21.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/22.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/23.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/24.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/25.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/26.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/27.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/28.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/36.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/29.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/30.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/31.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/32.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/33.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/34.png" style="width:100%">
+    <img class="mySlides" src="images/screenshots/35.png" style="width:100%">
+  
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+
+</body>
+</html>
